@@ -38,9 +38,39 @@ form h1 {
 }
 .form-item {
   margin-right: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
+input:focus {
+  border: blue solid 3px;
+  box-shadow: 5px 5px 10px rgb(194, 194, 194);
+}
+
 button {
   width: 13rem;
   height: 2rem;
+}
+
+.left-section {
+  position: relative;
+}
+
+.title-text {
+  position: absolute;
+}
+
+.left-section {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-section .odin-logo {
+  width: 6em;
+  height: auto;
+}
+
+.left-section .odin {
+  position: absolute;
+  color: white;
+  background-color: black;
 }

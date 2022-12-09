@@ -3,8 +3,21 @@
   --light-color:#E5E7EB;
 }
 
+@font-face {
+  font-family: Norse-Bold;
+  src: url(/Norse-Bold.otf);
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(/Roboto-Regular.ttf);
+}
+
+@import url();
+
 body {
   margin:0;
+  font-family: Roboto;
 }
 
 img {
@@ -32,9 +45,19 @@ form {
   grid-template-columns: repeat(2, auto);
   padding-left: 2rem;
   box-shadow: 5px 5px 10px rgb(194, 194, 194);
+  color: gray;
+  font-size: smaller;
+  letter-spacing: 0.1em;
 }
-form h1 {
+
+form input {
+  margin-bottom: 1em;
+}
+
+form h2 {
   grid-column: 1 / span 2;
+  color:black;
+  margin-bottom: 1em;
 }
 .form-item {
   margin-right: 2rem;
@@ -44,10 +67,24 @@ input:focus {
   border: blue solid 3px;
   box-shadow: 5px 5px 10px rgb(194, 194, 194);
 }
+input {
+  
+  height: 2rem;
+  
+}
 
 button {
   width: 13rem;
   height: 2rem;
+  background: #677445;
+  border-radius: 0.5em;
+  color:white;
+  display: inline-block;
+  border: none;
+  transition: transform 150ms ease;
+}
+button:hover {
+  transform: scale(1.1);
 }
 
 .left-section {
@@ -68,9 +105,41 @@ button {
   width: 6em;
   height: auto;
 }
+h1 {
+  font-family: Norse-Bold;
+  font-size: 6rem;
+  margin-bottom: 2rem;
+}
 
 .left-section .odin {
   position: absolute;
   color: white;
+  width:100%;
+}
+.left-section .odin h1, .left-section .odin img {
+  z-index: 1;
+}
+
+.odin-bg {
+  position: absolute;
+  z-index: 0;
   background-color: black;
+  opacity: 50%;
+  width: 100%;
+  height: 10rem;
+}
+
+.left-section p {
+  margin-top: 45rem;
+  position: absolute;
+  color: white;
+}
+
+.left-section p a {
+  color: white;
+}
+
+.main a {
+  color:#596D48;
+  text-decoration: none;
 }
